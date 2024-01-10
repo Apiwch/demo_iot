@@ -162,7 +162,7 @@ function sendMessagesToWebSocketClients() {
 
 
 // Your existing code
-const PORT = 5000;
+const PORT = 3333;
 server.listen(PORT, async () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
