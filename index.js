@@ -107,7 +107,7 @@ mqttClient.on('message', (topic, message) => {
     messagesArray[existingMessageIndex] = {
       topic: topic,
       message: receivedMessage,
-      timestamp: new Date().toLocaleTimeString('en-US', {
+      timestamp: new Date().toLocaleTimeString('en-US', {timeZone: "asia/bangkok"}, {
         hour12: false
       }),
     };
@@ -115,7 +115,7 @@ mqttClient.on('message', (topic, message) => {
     messagesArray.push({
       topic: topic,
       message: receivedMessage,
-      timestamp: new Date().toLocaleTimeString('en-US', {
+      timestamp: new Date().toLocaleTimeString('en-US', {timeZone: "asia/bangkok"}, {
         hour12: false
       }),
     });
